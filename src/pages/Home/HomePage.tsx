@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import Destination from "./Destination";
 import Explore from "./Explore";
+import Features from "./Features";
 import Partners from "./Partners";
 import TravelPoint from "./TravelPoint";
 
@@ -20,6 +21,7 @@ const HomePage = () => {
         <Partners />
         <Destination />
         <TravelPoint />
+        <Features />
       </div>
     </>
   );

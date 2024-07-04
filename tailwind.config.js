@@ -19,6 +19,7 @@ export default {
         "gray-light": "#EEEEEE",
         "pink-light": "#F85E9F",
         "orange-custom": "#FF5722",
+        "yellow-custom": "#FACD49",
       },
       boxShadow: {
         primary: "rgba(149, 157, 165, 0.2) 0px 8px 24px",

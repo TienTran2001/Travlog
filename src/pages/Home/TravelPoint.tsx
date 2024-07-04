@@ -1,5 +1,7 @@
 import discount from "../../assets/images/travelPoint/discount.svg";
 import CountUp from "react-countup";
+import ticketStar from "../../assets/images/icons/ticket-star.svg";
+import Ticket from "../../components/Ticket/Ticket";
 
 const travelPoints = [
   {
@@ -29,13 +31,16 @@ const TravelPoint = () => {
     <div className="">
       <div className="container mt-[128px]">
         <div className="flex flex-col md:flex-row">
-          <div className="bg-travel-point relative md:w-1/2">
-            <div className="flex items-center justify-center gap-x-[20px] rounded-full bg-white px-8 py-4 text-[23px] font-bold shadow-primary md:absolute md:right-0 md:top-1/4">
+          <div className="bg-travel-point md:w-1/2">
+            <Ticket className="md:absolute md:right-0 md:top-1/4">
               <img src={discount} alt="discount" className="bound-animation" />
               Discounted Price
-            </div>
+            </Ticket>
           </div>
-          <div className="mt-[50px] text-center md:mt-0 md:w-1/2 md:pl-[90px] md:text-start">
+          <div className="relative mt-[50px] text-center md:mt-0 md:w-1/2 md:pl-[90px] md:text-start">
+            <div className="bg-yellow-custom absolute right-0 top-1/2 hidden -translate-y-1/2 translate-x-1/2 rounded-full px-[36px] py-[38px] md:block">
+              <img src={ticketStar} alt="ticket start" />
+            </div>
             <h3 className="title-heading">Travel Point</h3>
             <h2 className="title-heading-2">
               We helping you find your dream location
