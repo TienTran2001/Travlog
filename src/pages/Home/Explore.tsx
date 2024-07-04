@@ -33,8 +33,9 @@ const Explore = () => {
             variant="OUTLINED"
             className="flex items-center justify-center gap-x-4"
           >
-            <div>
-              <img src={playIcon} alt="" className="bound-animation" />
+            <div className="relative">
+              <div className="absolute right-[2px] top-[2px] h-4 w-4 animate-ping rounded-full bg-pink-light"></div>
+              <img src={playIcon} alt="" className="" />
             </div>
             <span>Watch Demo</span>
           </Button>
@@ -44,22 +45,26 @@ const Explore = () => {
       <div className="bg-custom-explore mt-[50px] flex w-full flex-col items-center gap-[32px] pt-[83px] md:mt-0 md:w-1/2 md:flex-row">
         <div className="">
           <div className="relative">
-            <img src={explore1} alt="explore1" className="rounded-[32px]" />
-            <div className="jump-animation absolute -bottom-[10%] -left-[13%] rounded-full bg-pink-light p-4 shadow-lg">
+            <img
+              src={explore1}
+              alt="explore1"
+              className="jump-animation rounded-[32px]"
+            />
+            <div className="jump-animation-1 absolute -bottom-[10%] -left-[13%] rounded-full bg-pink-light p-4 shadow-lg">
               <img src={send} alt="send" className="" />
             </div>
           </div>
           <img
             src={explore2}
             alt="explore2"
-            className="mt-[32px] rounded-[32px]"
+            className="jump-animation mt-[32px] rounded-[32px]"
           />
         </div>
         <div className="relative">
           <img
             src={explore3}
             alt="explore3"
-            className="md:full h-[300px] w-[272px] rounded-[32px] object-cover md:h-full md:w-full"
+            className="md:full jump-animation-2 h-[300px] w-[272px] rounded-[32px] object-cover md:h-full md:w-full"
           />
           <div className="jump-animation absolute -left-[13%] bottom-full rounded-full bg-orange-custom p-4 shadow-lg md:-bottom-[30%] md:left-[30%]">
             <img className="" src={addUser} alt="add-user" />
