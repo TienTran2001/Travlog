@@ -1,9 +1,9 @@
-import tripadvisor from "../../assets/images/logo/tripadvisor.png";
-import expedia from "../../assets/images/logo/expedia.png";
-import booking from "../../assets/images/logo/booking.png";
-import airbnb from "../../assets/images/logo/airbnb.png";
-import orbiz from "../../assets/images/logo/orbitz.png";
-import obj from "../../assets/images/logo/OBJECTS.png";
+import tripadvisor from "../../assets/images/logo/tripadvisor.svg";
+import expedia from "../../assets/images/logo/expedia.svg";
+import booking from "../../assets/images/logo/booking.svg";
+import airbnb from "../../assets/images/logo/airbnb.svg";
+import orbiz from "../../assets/images/logo/orbitz.svg";
+import obj from "../../assets/images/logo/OBJECTS.svg";
 
 const partners = [
   {

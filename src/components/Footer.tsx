@@ -17,7 +17,7 @@ const Footer = () => {
             <img src={logo} alt="logo" />
             <span className="text-[24px] font-bold">Travlog</span>
           </div>
-          <p className="mt-8 text-[23px] font-medium text-secondary">
+          <p className="mt-8 text-[23px] font-normal text-secondary">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>

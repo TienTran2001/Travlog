@@ -2,7 +2,7 @@ import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
 import Button from "../../components/Buttons/Button";
 import { destinations } from "../../utils/containts";
 import { FaStar } from "react-icons/fa";
-import obj from "../../assets/images/destination/OBJECTS.png";
+import obj from "../../assets/images/destination/OBJECTS.svg";
 
 const Destination = () => {
   return (
