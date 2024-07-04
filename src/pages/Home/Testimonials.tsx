@@ -5,7 +5,7 @@ import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
 
 const Testimonials = () => {
   return (
-    <div className="bg-testimonials bg-po relative z-10 overflow-hidden bg-opacity-50 bg-no-repeat py-[128px]">
+    <div className="bg-testimonials bg-po relative z-10 overflow-hidden bg-opacity-50 bg-no-repeat pt-[128px]">
       <div className="container flex flex-col gap-y-16 text-center">
         <div>
           <h3 className="title-heading">Testimonials</h3>
