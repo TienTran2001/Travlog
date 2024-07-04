@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom */
+.title-heading {
+  @apply text-[23px] font-bold tracking-widest text-pink-light;
+}
+
+.title-heading-2 {
+  @apply mt-4 text-3xl font-bold md:text-heading-2 md:leading-[60px];
+}
+
+.text-desc {
+  @apply text-center text-lg text-secondary md:text-start;
+}
+
+.container {
+  @apply mx-auto w-full max-w-container p-[15px];
+}
+
+.bg-custom-explore,
+.bg-travel-point {
+  position: relative;
+}
+.bg-travel-point::before {
+  background-image: url("/public/woman.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: " ";
+  width: 789px;
+  height: 692px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-custom-explore::before {
+  background-image: url("/public/layer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: " ";
+  width: 772px;
+  height: 288px;
+  top: 0;
+  left: -100px;
+  position: absolute;
+  z-index: -1;
+}
+.bound-animation {
+  animation: bound-anim 1s infinite;
+}
+
+@keyframes bound-anim {
+  0%,
+  100% {
+    top: 0;
+    transform: scale(1);
+  }
+  30% {
+    top: -60%;
+    transform: scale(0.96, 1.04);
+  }
+  60% {
+    transform: scale(1);
+  }
+  90% {
+    top: 0;
+    transform: scale(1, 0.9);
+  }
+}
+
+.jump-animation {
+  animation: jump 2s ease-in-out infinite;
+}
+
+@keyframes jump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-travel-point::before {
+    display: none;
+  }
+}
