@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "../assets/images/logo/logo.png";
+import logo from "../assets/images/logo/logo.svg";
 import Button from "./Buttons/Button";
 import { nav } from "../utils/containts";
 import { IoClose } from "react-icons/io5";

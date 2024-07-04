@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Contact from "./Contact";
 import Destination from "./Destination";
@@ -11,7 +12,7 @@ const HomePage = () => {
   return (
     <>
       <div
-        className="min-h-[4000px]"
+        className="w-full overflow-hidden"
         style={{
           backgroundImage: "url('/Ellipse.png'), url('/Ellipse1.png')",
           backgroundRepeat: "no-repeat, no-repeat",
@@ -26,6 +27,7 @@ const HomePage = () => {
         <Features />
         <Testimonials />
         <Contact />
+        <Footer />
       </div>
     </>
   );

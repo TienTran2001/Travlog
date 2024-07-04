@@ -20,6 +20,14 @@
   @apply mx-auto w-full max-w-container p-[15px];
 }
 
+.footer-heading {
+  @apply text-[23px] font-bold;
+}
+
+.footer-item-link {
+  @apply text-dark-gray text-lg hover:text-secondary;
+}
+
 .bg-custom-explore,
 .bg-travel-point {
   position: relative;
