@@ -98,7 +98,7 @@ const Features = () => {
                 className="h-[350px] w-full rounded-[32px] object-cover md:h-full md:rounded-full"
               />
             </div>
-            <div className="absolute -right-[10%] top-1/3 hidden h-[496px] w-[351px] rounded-full border-[24px] border-white md:block">
+            <div className="absolute -right-[10%] top-[37%] hidden h-[496px] w-[351px] rounded-full border-[24px] border-white md:block">
               <img
                 src={feature2}
                 alt="feature2"

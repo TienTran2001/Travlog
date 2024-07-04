@@ -24,6 +24,25 @@
 .bg-travel-point {
   position: relative;
 }
+
+.bg-testimonials {
+  background-position: 59% 39%;
+  background-size: 228%;
+  background-repeat: no-repeat;
+}
+/* .bg-testimonials::before {
+  background-image: url("/public/bg-testimonials.svg");
+  background-position: 24% 24%;
+  background-size: 145%;
+  background-repeat: no-repeat;
+  content: " ";
+  width: 2506px;
+  height: 959px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+} */
 .bg-travel-point::before {
   background-image: url("/public/woman.png");
   background-repeat: no-repeat;

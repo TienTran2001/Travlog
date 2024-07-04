@@ -29,8 +29,12 @@ const Header = () => {
       </ul>
 
       <div className="hidden md:block">
-        <Button variant="NONE">Log In</Button>
-        <Button variant="PRIMARY">Sign Up</Button>
+        <Button variant="NONE" className="text-sm">
+          Log In
+        </Button>
+        <Button variant="PRIMARY" className="text-sm">
+          Sign Up
+        </Button>
       </div>
 
       {/* mobile */}
@@ -51,10 +55,10 @@ const Header = () => {
           <IoClose size={24} />
         </div>
         <div className="w-full">
-          <Button variant="OUTLINED" className="w-full">
+          <Button variant="OUTLINED" className="w-full text-sm">
             Log In
           </Button>
-          <Button variant="PRIMARY" className="mt-4 w-full">
+          <Button variant="PRIMARY" className="mt-4 w-full text-sm">
             Sign Up
           </Button>
         </div>

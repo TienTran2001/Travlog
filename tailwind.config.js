@@ -16,10 +16,12 @@ export default {
       colors: {
         main: "#5D50C6",
         secondary: "rgba(25, 24, 37, 0.5)",
+        "dark-gray": "rgba(25, 24, 37, 0.75)",
         "gray-light": "#EEEEEE",
         "pink-light": "#F85E9F",
         "orange-custom": "#FF5722",
         "yellow-custom": "#FACD49",
+        "yellow-light": "#FFFBF0",
       },
       boxShadow: {
         primary: "rgba(149, 157, 165, 0.2) 0px 8px 24px",
@@ -29,6 +31,7 @@ export default {
       },
       backgroundImage: {
         travel: "url('/bg.png')",
+        testimonials: "url('/bg-testimonials.svg')",
       },
     },
   },
