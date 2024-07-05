@@ -5,11 +5,11 @@ import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
 
 const Testimonials = () => {
   return (
-    <div className="bg-testimonials bg-po relative z-10 overflow-hidden bg-opacity-50 bg-no-repeat pt-[128px]">
-      <div className="container flex flex-col gap-y-16 text-center">
+    <div className="bg-po relative z-10 overflow-hidden bg-opacity-50 bg-testimonials bg-no-repeat pt-[128px]">
+      <div className="container flex flex-col text-center gap-y-16">
         <div>
           <h3 className="title-heading">Testimonials</h3>
-          <h2 className="title-heading-2 mt-4">Trust our clients</h2>
+          <h2 className="mt-4 title-heading-2">Trust our clients</h2>
         </div>
         <div className="flex items-center">
           <div className="-translate-y-1/2">
@@ -25,7 +25,7 @@ const Testimonials = () => {
               <img
                 src={avatar}
                 alt="avatar"
-                className="h-full w-full rounded-full object-cover"
+                className="object-cover w-full h-full rounded-full"
               />
             </div>
             <div className="flex flex-col items-center gap-y-8">
@@ -42,15 +42,15 @@ const Testimonials = () => {
                 <FaStar size={32} className="text-yellow-custom" />
                 <FaStar size={32} className="text-yellow-custom" />
               </div>
-              <p className="text-dark-gray text-base font-medium md:text-[23px]">
+              <p className="text-base font-medium text-dark-gray md:text-[23px] md:leading-[40px]">
                 Contrary to popular belief, Lorem Ipsum is not simply random
                 text. It has roots in a piece of classical Latin literature from
                 45 BC.
               </p>
-              <div className="mt-8 flex gap-x-6">
-                <div className="h-6 w-6 rounded-full bg-gray-light hover:bg-pink-light"></div>
-                <div className="h-6 w-6 rounded-full bg-pink-light hover:bg-pink-light"></div>
-                <div className="h-6 w-6 rounded-full bg-gray-light hover:bg-pink-light"></div>
+              <div className="flex mt-8 gap-x-6">
+                <div className="w-6 h-6 rounded-full bg-gray-light hover:bg-pink-light"></div>
+                <div className="w-6 h-6 rounded-full bg-pink-light hover:bg-pink-light"></div>
+                <div className="w-6 h-6 rounded-full bg-gray-light hover:bg-pink-light"></div>
               </div>
             </div>
           </div>
