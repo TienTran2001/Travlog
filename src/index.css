@@ -123,4 +123,8 @@
   .bg-travel-point::before {
     display: none;
   }
+
+  .bg-custom-explore::before {
+    left: 0px;
+  }
 }

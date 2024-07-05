@@ -34,7 +34,7 @@ const Partners = () => {
       <div className="absolute -top-[50px] left-[38px] hidden lg:block">
         <img src={obj} alt="" />
       </div>
-      <div className="container mt-[50px] flex flex-col items-center justify-between gap-y-10 !py-[64px] lg:flex-row lg:items-center">
+      <div className="container mt-[50px] flex flex-wrap items-center justify-center gap-10 !py-[64px] lg:flex-row lg:items-center lg:justify-between">
         {partners.length > 0 &&
           partners.map((item, index) => (
             <div key={index}>
