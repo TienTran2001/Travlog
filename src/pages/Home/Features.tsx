@@ -38,12 +38,12 @@ const servicesDes = [
 const Features = () => {
   return (
     <div className="container mt-[64px]">
-      <div className="flex flex-col text-center md:flex-row md:gap-x-[42px] md:text-start">
+      <div className="flex flex-col text-center lg:flex-row lg:gap-x-[42px] lg:text-start">
         {/* div left */}
-        <div className="md:w-1/2">
+        <div className="lg:w-1/2">
           <h3 className="title-heading">Key features</h3>
-          <h2 className="title-heading-2 mt-4">We offer best services</h2>
-          <p className="text-desc mt-8">
+          <h2 className="mt-4 title-heading-2">We offer best services</h2>
+          <p className="mt-8 text-desc">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>
@@ -60,10 +60,10 @@ const Features = () => {
                     {item.icon}
                   </div>
                   <div className="">
-                    <p className="text-lg font-bold md:text-[23px]">
+                    <p className="text-lg font-bold lg:text-[23px]">
                       {item.title}
                     </p>
-                    <p className="mt-2 text-base text-secondary md:text-lg">
+                    <p className="mt-2 text-base text-secondary lg:text-lg">
                       {item.desc}
                     </p>
                   </div>
@@ -72,8 +72,8 @@ const Features = () => {
           </div>
         </div>
         {/* div right */}
-        <div className="relative mt-[50px] flex flex-col items-center md:mt-0 md:w-1/2 md:flex-row">
-          <div className="absolute -right-1/3 top-0 hidden md:block">
+        <div className="relative mt-[50px] flex flex-col items-center lg:mt-0 lg:w-1/2 lg:flex-row">
+          <div className="absolute top-0 hidden -right-1/3 lg:block">
             <img
               src={bgFeature}
               alt="feature background"
@@ -81,7 +81,7 @@ const Features = () => {
             />
           </div>
 
-          <Ticket className="right-0 top-[20%] z-10 w-full md:absolute md:w-auto">
+          <Ticket className="right-0 top-[20%] z-10 w-full lg:absolute lg:w-auto">
             <img
               src={imageLocation}
               alt="image location"
@@ -90,19 +90,19 @@ const Features = () => {
             Paradise on Earth
           </Ticket>
 
-          <div className="relative mt-[50px] w-full md:mt-0">
-            <div className="height-[665px] md:w-[443px]">
+          <div className="relative mt-[50px] w-full lg:mt-0">
+            <div className="height-[665px] lg:w-[443px]">
               <img
                 src={feature1}
                 alt="feature1"
-                className="h-[350px] w-full rounded-[32px] object-cover md:h-full md:rounded-full"
+                className="h-[350px] w-full rounded-[32px] object-cover md:h-[650px] lg:h-full lg:rounded-full"
               />
             </div>
-            <div className="absolute -right-[10%] top-[37%] hidden h-[496px] w-[351px] rounded-full border-[24px] border-white md:block">
+            <div className="absolute -right-[10%] top-[37%] hidden h-[496px] w-[351px] rounded-full border-[24px] border-white md:right-0 md:top-[45%] md:block">
               <img
                 src={feature2}
                 alt="feature2"
-                className="h-full w-full rounded-full object-cover"
+                className="object-cover w-full h-full rounded-full"
               />
             </div>
           </div>

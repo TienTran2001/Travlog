@@ -19,7 +19,7 @@ const Header = () => {
         <div className="ml-4">Travlog</div>
       </div>
 
-      <ul className="hidden items-center gap-x-16 text-sm font-bold text-secondary md:flex">
+      <ul className="items-center hidden text-sm font-bold gap-x-16 text-secondary lg:flex">
         {nav?.length > 0 &&
           nav.map((item, index) => (
             <li key={index} className="hover:text-black">
@@ -28,7 +28,7 @@ const Header = () => {
           ))}
       </ul>
 
-      <div className="hidden md:block">
+      <div className="hidden lg:block">
         <Button variant="NONE" className="text-sm">
           Log In
         </Button>
@@ -39,7 +39,7 @@ const Header = () => {
 
       {/* mobile */}
       <ul
-        className={`fixed inset-0 z-50 flex flex-col items-center gap-y-16 bg-white px-[15px] py-16 text-sm font-bold text-secondary transition-all md:hidden ${openMenu ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed inset-0 z-50 flex flex-col items-center gap-y-16 bg-white px-[15px] py-16 text-sm font-bold text-secondary transition-all lg:hidden ${openMenu ? "translate-x-0" : "translate-x-full"}`}
       >
         {nav?.length > 0 &&
           nav.map((item, index) => (
@@ -49,7 +49,7 @@ const Header = () => {
           ))}
 
         <div
-          className="absolute right-0 top-0 cursor-pointer p-6 text-black"
+          className="absolute top-0 right-0 p-6 text-black cursor-pointer"
           onClick={() => setOpenMenu(false)}
         >
           <IoClose size={24} />
@@ -58,13 +58,13 @@ const Header = () => {
           <Button variant="OUTLINED" className="w-full text-sm">
             Log In
           </Button>
-          <Button variant="PRIMARY" className="mt-4 w-full text-sm">
+          <Button variant="PRIMARY" className="w-full mt-4 text-sm">
             Sign Up
           </Button>
         </div>
       </ul>
       <div
-        className="cursor-pointer md:hidden"
+        className="cursor-pointer lg:hidden"
         onClick={() => {
           console.log("open menu");
           setOpenMenu(true);

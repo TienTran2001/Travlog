@@ -19,7 +19,7 @@ const Modal = ({ children, open = false, handleClose = () => {} }: IProps) => {
         className="absolute inset-0 bg-black opacity-25 overlay"
         onClick={handleClose}
       ></div>
-      <div className="modal-content relative z-10 h-full max-h-[900px] w-full max-w-container rounded-lg bg-white bg-opacity-20 p-2">
+      <div className="modal-content relative z-10 h-full max-h-[500px] w-full max-w-container rounded-lg bg-white bg-opacity-20 p-2 md:max-h-[900px]">
         {children}
       </div>
     </div>,

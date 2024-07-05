@@ -29,16 +29,16 @@ const Explore = () => {
         </Modal>
       )}
 
-      <div className="container mt-[100px] flex flex-col items-center overflow-hidden px-[15px] md:mt-16 md:flex-row md:overflow-visible">
+      <div className="container mt-[100px] flex flex-col items-center overflow-hidden px-[15px] lg:mt-16 lg:flex-row lg:overflow-visible">
         {/* div left */}
-        <div className="flex flex-col gap-y-[43px] md:w-1/2 md:pr-[90px]">
-          <div className="flex items-center justify-center px-8 py-4 bg-white rounded-full gap-x-4 shadow-primary md:self-start">
+        <div className="flex w-full flex-col gap-y-[43px] lg:w-1/2 lg:pr-[90px]">
+          <div className="flex items-center justify-center px-8 py-4 bg-white rounded-full gap-x-4 shadow-primary lg:self-start">
             <span className="font-bold text-pink-light">
               Explore the world!
             </span>
             <img src={bagIcon} alt="" className="bound-animation" />
           </div>
-          <h2 className="text-center text-4xl font-bold md:text-start md:text-[69px] md:leading-[100px]">
+          <h2 className="text-center text-4xl font-bold lg:text-start lg:text-[69px] lg:leading-[100px]">
             Travel <span className="text-pink-light">top destination</span> of
             the world
           </h2>
@@ -46,7 +46,7 @@ const Explore = () => {
             We always make our customer happy by providing as many choices as
             possible
           </p>
-          <div className="flex flex-col gap-4 md:flex-row">
+          <div className="flex flex-col gap-4 lg:flex-row">
             <Button variant="PRIMARY" className="shadow-primary">
               Get Started
             </Button>
@@ -64,7 +64,7 @@ const Explore = () => {
           </div>
         </div>
         {/* div right */}
-        <div className="bg-custom-explore mt-[50px] flex w-full flex-col items-center gap-[32px] pt-[83px] md:mt-0 md:w-1/2 md:flex-row">
+        <div className="bg-custom-explore mt-[50px] flex w-full flex-col items-center gap-[32px] pt-[83px] md:flex-row md:justify-center lg:mt-0 lg:w-1/2">
           <div className="">
             <div className="relative">
               <img
@@ -86,12 +86,12 @@ const Explore = () => {
             <img
               src={explore3}
               alt="explore3"
-              className="md:full jump-animation-2 h-[300px] w-[272px] rounded-[32px] object-cover md:h-full md:w-full"
+              className="lg:full jump-animation-2 h-[300px] w-[272px] rounded-[32px] object-cover lg:h-full lg:w-full"
             />
-            <div className="jump-animation absolute -left-[13%] bottom-full rounded-full bg-orange-custom p-4 shadow-lg md:-bottom-[30%] md:left-[30%]">
+            <div className="jump-animation absolute -left-[13%] bottom-full rounded-full bg-orange-custom p-4 shadow-lg lg:-bottom-[30%] lg:left-[30%]">
               <img className="" src={addUser} alt="add-user" />
             </div>
-            <div className="jump-animation absolute -right-[10%] top-2/3 flex items-center gap-x-2 rounded-full bg-white px-8 py-4 shadow-primary md:-right-[40%]">
+            <div className="jump-animation absolute -right-[10%] top-2/3 flex items-center gap-x-2 rounded-full bg-white px-8 py-4 shadow-primary lg:-right-[40%]">
               <HiLocationMarker color="#FACD49" size={30} />
               <span className="text-sm font-bold">Top Places</span>
             </div>

@@ -13,7 +13,7 @@
 }
 
 .text-desc {
-  @apply text-center text-lg text-secondary md:text-start;
+  @apply text-lg text-center text-secondary lg:text-start;
 }
 
 .container {
@@ -119,7 +119,7 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
   .bg-travel-point::before {
     display: none;
   }
