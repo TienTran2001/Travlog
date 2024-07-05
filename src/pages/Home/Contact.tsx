@@ -1,12 +1,22 @@
 import caroLayer from "../../assets/images/contact/caro_layer.svg";
 import Button from "../../components/Buttons/Button";
 import emailIcon from "../../assets/images/icons/mail.svg";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+
+  const handleSendEmail = () => {
+    if (email.trim() === "") {
+      toast("Vui lòng nhập email!");
+    } else toast(`📧 ${email}`);
+  };
+
   return (
     <div className="container mt-[128px]">
-      <div className="bg-yellow-light relative rounded-[32px] px-[15px] py-[128px] text-center md:px-16">
-        <div className="absolute left-0 top-0 -translate-x-4 -translate-y-4 md:-translate-x-1/4 md:-translate-y-1/4">
+      <div className="relative rounded-[32px] bg-yellow-light px-[15px] py-[128px] text-center md:px-16">
+        <div className="absolute top-0 left-0 -translate-x-4 -translate-y-4 md:-translate-x-1/4 md:-translate-y-1/4">
           <img src={caroLayer} alt="caro layer" className="" />
         </div>
         <h3 className="title-heading">subscribe to our newsletter</h3>
@@ -20,13 +30,18 @@ const Contact = () => {
                 <img src={emailIcon} alt="email icon" />
               </div>
               <input
-                type="text"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full rounded-[32px] py-4 text-lg font-bold placeholder-black outline-none md:py-8 md:text-[23px]"
                 placeholder="Your Email"
               />
             </div>
             <div className="w-full md:w-auto">
-              <Button className="w-full !rounded-[32px] text-lg md:px-[64px] md:py-[34px] md:text-[23px]">
+              <Button
+                className="w-full !rounded-[32px] text-lg md:px-[64px] md:py-[34px] md:text-[23px]"
+                onClick={handleSendEmail}
+              >
                 Subscribe
               </Button>
             </div>

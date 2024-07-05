@@ -2,6 +2,7 @@ interface IProp {
   children: React.ReactNode;
   className?: string;
   variant?: "PRIMARY" | "OUTLINED" | "NONE";
+  onClick?: () => void;
 }
 
 const variantClass = {
@@ -10,10 +11,16 @@ const variantClass = {
   NONE: "text-black",
 };
 
-const Button = ({ children, className = "", variant = "PRIMARY" }: IProp) => {
+const Button = ({
+  children,
+  className = "",
+  variant = "PRIMARY",
+  onClick = () => {},
+}: IProp) => {
   return (
     <button
-      className={`rounded-full px-8 py-4 font-bold ${variantClass[variant]} ${className}`}
+      className={`rounded-full px-8 py-4 font-bold ${variantClass[variant]} ${className} transition-all hover:opacity-95 hover:shadow-primary`}
+      onClick={onClick}
     >
       {children}
     </button>

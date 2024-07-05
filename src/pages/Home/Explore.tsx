@@ -34,7 +34,7 @@ const Explore = () => {
             className="flex items-center justify-center gap-x-4"
           >
             <div className="relative">
-              <div className="absolute right-[2px] top-[2px] h-4 w-4 animate-ping rounded-full bg-pink-light"></div>
+              <div className="absolute right-[1px] top-[1px] h-[18px] w-[18px] animate-ping rounded-full border-[4px] border-main"></div>
               <img src={playIcon} alt="" className="" />
             </div>
             <span>Watch Demo</span>
