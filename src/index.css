@@ -13,7 +13,7 @@
 }
 
 .text-desc {
-  @apply text-lg text-center text-secondary lg:text-start;
+  @apply text-center text-lg text-secondary lg:text-start;
 }
 
 .container {
@@ -78,6 +78,13 @@
 }
 .bound-animation {
   animation: bound-anim 1s infinite;
+}
+
+.slick-dots li.slick-active .custom-dot {
+  @apply bg-pink-light;
+}
+.custom-dots li {
+  margin: 0 12px;
 }
 
 @keyframes bound-anim {
