@@ -13,7 +13,7 @@
 }
 
 .text-desc {
-  @apply text-center text-lg text-secondary lg:text-start;
+  @apply text-lg text-center text-secondary lg:text-start;
 }
 
 .container {
@@ -79,12 +79,25 @@
 .bound-animation {
   animation: bound-anim 1s infinite;
 }
-
-.slick-dots li.slick-active .custom-dot {
+.slider-testimonials .slick-dots li.slick-active .custom-dot {
   @apply bg-pink-light;
 }
-.custom-dots li {
+
+.slider-testimonials .custom-dots li {
   margin: 0 12px;
+}
+
+/* slider-destination */
+.slider-destination .slick-list {
+  @apply py-16;
+}
+
+.slider-destination .slick-track {
+  @apply flex md:gap-x-[15px];
+}
+
+.slider-partners .slick-list div {
+  @apply flex items-center;
 }
 
 @keyframes bound-anim {

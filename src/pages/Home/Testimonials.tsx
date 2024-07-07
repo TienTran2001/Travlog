@@ -56,14 +56,14 @@ const Testimonials = () => {
           <h3 className="title-heading">Testimonials</h3>
           <h2 className="title-heading-2 mt-4">Trust our clients</h2>
         </div>
-        <div className="relative mx-auto w-full md:max-w-[920px]">
+        <div className="slider-testimonials relative mx-auto w-full md:max-w-[920px]">
           <div className="absolute top-[20%] z-10 -translate-x-full"></div>
           <Slider ref={slider} {...settings}>
             {sliderTestimonials?.length > 0 &&
               sliderTestimonials.map((item, index) => (
                 <div
                   key={index}
-                  className="mx-auto flex w-full flex-col gap-y-16 py-[88px]"
+                  className="mx-auto flex w-full flex-col gap-y-16 pb-[88px]"
                 >
                   <div className="mx-auto flex h-[128px] w-[128px]">
                     <img
