@@ -37,13 +37,13 @@ const Destination = () => {
 
   const slider = React.useRef<Slider>(null);
   return (
-    <div className="container mt-[128px]">
+    <div className="container mt-[64px]">
       <div className="flex flex-col items-center justify-between md:flex-row">
         <div className="text-center md:text-start">
           <h3 className="title-heading">Top Destination</h3>
           <h2 className="title-heading-2">Explore top destination</h2>
         </div>
-        <div className="mt-6 flex gap-x-8 md:mt-0">
+        <div className="flex mt-6 gap-x-8 md:mt-0">
           <Button
             variant="OUTLINED"
             className="!p-[38px] text-black transition-all hover:bg-main hover:text-white hover:shadow-current"
@@ -66,7 +66,7 @@ const Destination = () => {
         <div className="absolute right-0 top-0 hidden -translate-y-10 translate-x-[120%] md:block">
           <img src={obj} alt="obj" />
         </div>
-        <div className="slider-destination w-full">
+        <div className="w-full slider-destination">
           <Slider ref={slider} {...settings}>
             {destinations.length > 0 &&
               destinations.map((item, index) => (
@@ -89,7 +89,7 @@ const Destination = () => {
                     <p className="mt-4 text-lg font-medium text-secondary">
                       {item.location}
                     </p>
-                    <span className="mt-8 flex flex-1 items-center gap-x-2 text-orange-custom">
+                    <span className="flex items-center flex-1 mt-8 gap-x-2 text-orange-custom">
                       <span>{item.rating}</span>
                       <FaStar size={20} />
                     </span>

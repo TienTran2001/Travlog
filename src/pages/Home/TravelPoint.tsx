@@ -36,7 +36,7 @@ const TravelPoint = () => {
       onExit={() => setCounter(false)}
     >
       <div className="">
-        <div className="container mt-[128px]">
+        <div className="container mt-[64px]">
           <div className="flex flex-col lg:flex-row">
             <div className="bg-travel-point lg:w-1/2">
               <Ticket className="lg:absolute lg:right-0 lg:top-1/4">

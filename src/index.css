@@ -100,6 +100,14 @@
   @apply flex items-center;
 }
 
+.slider-service .slick-track {
+  @apply gap-x-[21px] pb-[64px];
+}
+
+.slider-service .slick-center > div > div {
+  @apply shadow-primary;
+}
+
 @keyframes bound-anim {
   0%,
   100% {
