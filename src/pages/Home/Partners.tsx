@@ -4,6 +4,8 @@ import booking from "../../assets/images/logo/booking.svg";
 import airbnb from "../../assets/images/logo/airbnb.svg";
 import orbiz from "../../assets/images/logo/orbitz.svg";
 import obj from "../../assets/images/logo/OBJECTS.svg";
+import Slider from "react-slick";
+import React from "react";
 
 const partners = [
   {
@@ -29,18 +31,44 @@ const partners = [
 ];
 
 const Partners = () => {
+  const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+  const slider = React.useRef<Slider>(null);
   return (
     <div className="relative">
       <div className="absolute -top-[50px] left-[38px] hidden lg:block">
         <img src={obj} alt="" />
       </div>
-      <div className="container mt-[50px] flex flex-wrap items-center justify-center gap-10 !py-[64px] lg:flex-row lg:items-center lg:justify-between">
-        {partners.length > 0 &&
-          partners.map((item, index) => (
-            <div key={index}>
-              <img src={item.url} alt={item.name} />
-            </div>
-          ))}
+      <div className="slider-partners container mt-[50px] gap-10 !py-[64px] lg:flex-row lg:items-center lg:justify-between">
+        <Slider ref={slider} {...settings}>
+          {partners.length > 0 &&
+            partners.map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center px-[40px]"
+              >
+                <img src={item.url} alt={item.name} className="" />
+              </div>
+            ))}
+        </Slider>
       </div>
     </div>
   );
