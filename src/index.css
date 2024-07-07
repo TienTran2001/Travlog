@@ -101,7 +101,7 @@
 }
 
 .slider-service .slick-track {
-  @apply gap-x-[21px] pb-[64px];
+  @apply gap-x-[21px] pb-[64px] pt-[15px];
 }
 
 .slider-service .slick-center > div > div {
