@@ -1,19 +1,26 @@
+export const navRoutes = {
+  HOME: "/",
+  DISCOVER: "/discover",
+  SPECIAL_DEALS: "/special_deals",
+  CONTACT: "/Contact",
+};
+
 export const nav = [
   {
     name: "Home",
-    link: "",
+    link: navRoutes.HOME,
   },
   {
     name: "Discover",
-    link: "/discover",
+    link: navRoutes.DISCOVER,
   },
   {
     name: "Special Deals",
-    link: "/special_deals",
+    link: navRoutes.SPECIAL_DEALS,
   },
   {
     name: "Contact",
-    link: "/contact",
+    link: navRoutes.CONTACT,
   },
 ];
 

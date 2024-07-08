@@ -1,5 +1,4 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import MainLayout from "../../Layouts/MainLayout";
 import Contact from "./Contact";
 import Destination from "./Destination";
 import Explore from "./Explore";
@@ -13,16 +12,16 @@ const HomePage = () => {
   return (
     <>
       <div className="bg-homepage w-full overflow-hidden">
-        <Header />
-        <Explore />
-        <Partners />
-        <Service />
-        <Destination />
-        <TravelPoint />
-        <Features />
-        <Testimonials />
-        <Contact />
-        <Footer />
+        <MainLayout>
+          <Explore />
+          <Partners />
+          <Service />
+          <Destination />
+          <TravelPoint />
+          <Features />
+          <Testimonials />
+          <Contact />
+        </MainLayout>
       </div>
     </>
   );

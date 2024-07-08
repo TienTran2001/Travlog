@@ -1,10 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import HomePage from "./pages/Home/HomePage";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Discover from "./pages/Discover/Discover";
+import SpecialDeals from "./pages/SpecialDeals/SpecialDeals";
+import Contact from "./pages/Contact/Contact";
+import { navRoutes } from "./utils/containts";
 
 function App() {
   return (
@@ -23,7 +26,10 @@ function App() {
           theme="colored"
         />
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path={navRoutes.HOME} element={<HomePage />} />
+          <Route path={navRoutes.DISCOVER} element={<Discover />} />
+          <Route path={navRoutes.SPECIAL_DEALS} element={<SpecialDeals />} />
+          <Route path={navRoutes.CONTACT} element={<Contact />} />
         </Routes>
       </div>
     </>
