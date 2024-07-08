@@ -12,14 +12,7 @@ import TravelPoint from "./TravelPoint";
 const HomePage = () => {
   return (
     <>
-      <div
-        className="w-full overflow-hidden"
-        style={{
-          backgroundImage: "url('/Ellipse.png'), url('/Ellipse1.png')",
-          backgroundRepeat: "no-repeat, no-repeat",
-          backgroundPosition: "top left, top 10% right",
-        }}
-      >
+      <div className="bg-homepage w-full overflow-hidden">
         <Header />
         <Explore />
         <Partners />

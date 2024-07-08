@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/logo.svg";
 import Button from "./Buttons/Button";
 import { nav } from "../utils/containts";
@@ -9,7 +9,7 @@ import { useState } from "react";
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
-  console.log(openMenu);
+  // console.log(openMenu);
   return (
     <header className="container relative flex items-center justify-between px-[15px] py-5 md:py-9">
       <div className="flex items-center text-2xl font-bold">
@@ -19,21 +19,26 @@ const Header = () => {
         <div className="ml-4">Travlog</div>
       </div>
 
-      <ul className="items-center hidden text-sm font-bold gap-x-16 text-secondary lg:flex">
+      <ul className="hidden items-center gap-x-16 text-sm font-bold text-secondary lg:flex">
         {nav?.length > 0 &&
           nav.map((item, index) => (
             <li key={index} className="hover:text-black">
-              <Link to={item.link}>{item.name}</Link>
+              <NavLink
+                to={item.link}
+                className={({ isActive }) => (isActive ? "text-black" : "")}
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
       </ul>
 
       <div className="hidden lg:block">
         <Button variant="NONE" className="text-sm">
-          Log In
+          <Link to="/login">Log In</Link>
         </Button>
-        <Button variant="PRIMARY" className="text-sm">
-          Sign Up
+        <Button variant="PRIMARY" className="ml-4 text-sm">
+          <Link to="/register">Sign Up</Link>
         </Button>
       </div>
 
@@ -44,22 +49,27 @@ const Header = () => {
         {nav?.length > 0 &&
           nav.map((item, index) => (
             <li key={index} className="hover:text-black">
-              <Link to={item.link}>{item.name}</Link>
+              <NavLink
+                to={item.link}
+                className={({ isActive }) => (isActive ? "text-black" : "")}
+              >
+                {item.name}
+              </NavLink>
             </li>
           ))}
 
         <div
-          className="absolute top-0 right-0 p-6 text-black cursor-pointer"
+          className="absolute right-0 top-0 cursor-pointer p-6 text-black"
           onClick={() => setOpenMenu(false)}
         >
           <IoClose size={24} />
         </div>
         <div className="w-full">
           <Button variant="OUTLINED" className="w-full text-sm">
-            Log In
+            <Link to="/login">Log In</Link>
           </Button>
-          <Button variant="PRIMARY" className="w-full mt-4 text-sm">
-            Sign Up
+          <Button variant="PRIMARY" className="mt-4 w-full text-sm">
+            <Link to="/register">Sign Up</Link>
           </Button>
         </div>
       </ul>
