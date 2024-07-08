@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/logo.svg";
 import Button from "./Buttons/Button";
-import { nav } from "../utils/containts";
+import { nav, navRoutes } from "../utils/containts";
 import { IoClose } from "react-icons/io5";
 import { IoMdMenu } from "react-icons/io";
 import { useState } from "react";
@@ -12,12 +12,14 @@ const Header = () => {
   // console.log(openMenu);
   return (
     <header className="container relative flex items-center justify-between px-[15px] py-5 md:py-9">
-      <div className="flex items-center text-2xl font-bold">
-        <div>
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="ml-4">Travlog</div>
-      </div>
+      <Link to={navRoutes.HOME}>
+        <div className="flex items-center text-2xl font-bold">
+          <div>
+            <img src={logo} alt="logo" />
+          </div>
+          <div className="ml-4">Travlog</div>
+        </div>{" "}
+      </Link>
 
       <ul className="hidden items-center gap-x-16 text-sm font-bold text-secondary lg:flex">
         {nav?.length > 0 &&

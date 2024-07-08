@@ -2,7 +2,7 @@ export const navRoutes = {
   HOME: "/",
   DISCOVER: "/discover",
   SPECIAL_DEALS: "/special_deals",
-  CONTACT: "/Contact",
+  CONTACT: "/contact",
 };
 
 export const nav = [

@@ -11,7 +11,7 @@ import TravelPoint from "./TravelPoint";
 const HomePage = () => {
   return (
     <>
-      <div className="bg-homepage w-full overflow-hidden">
+      <div className="bg-homepage w-full">
         <MainLayout>
           <Explore />
           <Partners />
