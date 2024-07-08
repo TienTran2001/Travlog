@@ -28,6 +28,7 @@ export const destinations = [
     price: "550.16",
     location: "Rome, Italy",
     rating: 4.5,
+    link: "",
   },
   {
     image: oceanWithFull,
@@ -35,6 +36,7 @@ export const destinations = [
     price: "20.99",
     location: "Maldives",
     rating: 4.8,
+    link: "",
   },
   {
     image: mountainView,
@@ -42,6 +44,7 @@ export const destinations = [
     price: "150.99",
     location: "United Arab Emeries ",
     rating: 5.0,
+    link: "",
   },
 ];
 
@@ -68,5 +71,36 @@ export const sliderTestimonials = [
     info: "Travel Enthusiast",
     rating: 5,
     desc: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+  },
+];
+
+import destination from "../assets/images/service/service1.png";
+import booking from "../assets/images/service/service2.png";
+import weather from "../assets/images/service/service3.png";
+
+export const serviceItems = [
+  {
+    img: destination,
+    title: "Best Tour Guide",
+    link: "",
+    desc: "What looked like a small patch of purple grass, above five feet.",
+  },
+  {
+    img: booking,
+    title: "Easy Booking",
+    link: "",
+    desc: "Square, was moving across the sand in their direction.",
+  },
+  {
+    img: weather,
+    title: "Weather Forecast",
+    link: "",
+    desc: "What looked like a small patch of purple grass, above five feet.",
+  },
+  {
+    img: destination,
+    title: "Vietnam",
+    link: "",
+    desc: "What looked like a small patch of purple grass, above five feet.",
   },
 ];

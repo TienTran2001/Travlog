@@ -1,31 +1,7 @@
-import desitination from "../../assets/images/service/service1.png";
-import booking from "../../assets/images/service/service2.png";
-import weather from "../../assets/images/service/service3.png";
 import Slider from "react-slick";
 import React from "react";
-
-const serviceItems = [
-  {
-    img: desitination,
-    title: "Best Tour Guide",
-    desc: "What looked like a small patch of purple grass, above five feet.",
-  },
-  {
-    img: booking,
-    title: "Easy Booking",
-    desc: "Square, was moving across the sand in their direction.",
-  },
-  {
-    img: weather,
-    title: "Weather Forecast",
-    desc: "What looked like a small patch of purple grass, above five feet.",
-  },
-  {
-    img: desitination,
-    title: "Vietnam",
-    desc: "What looked like a small patch of purple grass, above five feet.",
-  },
-];
+import { Link } from "react-router-dom";
+import { serviceItems } from "../../utils/containts";
 
 const Service = () => {
   const settings = {
@@ -69,14 +45,14 @@ const Service = () => {
                     <img
                       src={item.img}
                       alt="img"
-                      className="object-cover w-16 h-16"
+                      className="h-16 w-16 object-cover"
                     />
                   </div>
                   <div className="flex flex-col items-center justify-center">
                     <h3 className="mt-16 text-center text-[22px] font-bold lg:text-[28px]">
-                      {item.title}
+                      <Link to={item.link}>{item.title}</Link>
                     </h3>
-                    <p className="flex-1 mt-8 text-base text-center text-secondary lg:text-lg">
+                    <p className="mt-8 flex-1 text-center text-base text-secondary lg:text-lg">
                       {item.desc}
                     </p>
                   </div>
