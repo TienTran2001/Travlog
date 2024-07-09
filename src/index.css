@@ -5,15 +5,15 @@
 
 /* custom */
 .title-heading {
-  @apply text-[23px] font-bold tracking-widest text-pink-light;
+  @apply font-bold tracking-widest text-18 md:text-23 text-pink-light;
 }
 
 .title-heading-2 {
-  @apply mt-4 text-3xl font-bold md:text-heading-2 md:leading-[60px];
+  @apply text-23 mt-4 font-bold md:text-4xl lg:leading-[60px];
 }
 
 .text-desc {
-  @apply text-center text-lg text-secondary lg:text-start;
+  @apply text-center text-16 text-secondary md:text-lg lg:text-start;
 }
 
 .container {
@@ -42,9 +42,7 @@
 }
 
 .bg-testimonials {
-  background-position: 59% 28%;
-  background-size: 228%;
-  background-repeat: no-repeat;
+  background: url("/bg-testimonials.svg") no-repeat 59% 28% / 228%;
 }
 
 .bg-travel-point::before {
@@ -75,33 +73,52 @@
 .bound-animation {
   animation: bound-anim 1s infinite;
 }
-.slider-testimonials .slick-dots li.slick-active .custom-dot {
+
+/* slider-destination */
+
+.slider-destination .swiper-wrapper {
+  @apply h-[480px] pb-6 md:h-[575px];
+}
+.slider-destination .swiper-slide {
+  @apply flex h-full p-4 sm:p-0;
+}
+
+.slider-service .swiper-slide {
+  @apply py-8;
+}
+
+.slider-service .swiper-slide.swiper-slide-active > div {
+  @apply shadow-primary;
+}
+
+.text-truncate-2-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.text-truncate-3-lines {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slider-testimonials #containerForBullets {
+  @apply flex justify-center gap-x-2 sm:gap-x-6;
+}
+
+.swiper-custom-bullet {
+  @apply inline-block w-4 h-4 -translate-y-full rounded-full cursor-pointer bg-gray-light hover:bg-pink-light md:h-6 md:w-6;
+}
+.swiper-custom-bullet.swiper-custom-bullet-active {
   @apply bg-pink-light;
 }
 
-.slider-testimonials .custom-dots li {
-  margin: 0 12px;
-}
-
-/* slider-destination */
-.slider-destination .slick-list {
-  @apply py-16;
-}
-
-.slider-destination .slick-track {
-  @apply flex md:gap-x-[15px];
-}
-
-.slider-partners .slick-list div {
-  @apply flex items-center;
-}
-
-.slider-service .slick-track {
-  @apply gap-x-[21px] pb-[64px] pt-[15px];
-}
-
-.slider-service .slick-center > div > div {
-  @apply shadow-primary;
+.slider-partners .swiper-wrapper {
+  @apply items-center;
 }
 
 @keyframes bound-anim {
@@ -150,5 +167,10 @@
 
   .bg-custom-explore::before {
     left: 0px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .bg-testimonials {
+    background: url("/bg-testimonials.svg") no-repeat 59% 39% / 286%;
   }
 }

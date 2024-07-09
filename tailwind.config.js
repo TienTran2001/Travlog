@@ -13,6 +13,9 @@ export default {
         container: "1140px",
       },
       backgroundColor: {},
+      borderRadius: {
+        32: "32px",
+      },
       colors: {
         main: "#5D50C6",
         secondary: "rgba(25, 24, 37, 0.5)",
@@ -28,10 +31,14 @@ export default {
       },
       fontSize: {
         "heading-2": "44px",
+        14: "0.875rem",
+        16: "1rem",
+        18: "1.125rem",
+        23: "1.4375rem",
       },
       backgroundImage: {
         travel: "url('/bg.png')",
-        testimonials: "url('/bg-testimonials.svg')",
+        // testimonials: "url('/bg-testimonials.svg')",
       },
     },
   },

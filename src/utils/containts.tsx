@@ -30,6 +30,15 @@ import mountainView from "../assets/images/destination/mountainView.png";
 
 export const destinations = [
   {
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/B%E1%BB%9D_%C4%91%C3%B4ng_c%E1%BA%A7u_R%E1%BB%93ng.jpg/1280px-B%E1%BB%9D_%C4%91%C3%B4ng_c%E1%BA%A7u_R%E1%BB%93ng.jpg",
+    title: "Paradise Beach, Vietnam",
+    price: "120",
+    location: "Da Nang, Vietnam",
+    rating: 5.0,
+    link: "",
+  },
+  {
     image: paradiseBeach,
     title: "Paradise Beach, Bantayan Island",
     price: "550.16",
