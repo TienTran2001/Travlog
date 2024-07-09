@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { serviceItems } from "../../utils/containts";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Autoplay } from "swiper/modules";
 
 const Service = () => {
   const swiperRef = useRef<SwiperRef>(null);
@@ -15,12 +16,17 @@ const Service = () => {
           <h2 className="title-heading-2">Our top value categories for you</h2>
         </div>
 
-        <div className="slider-service ld:mr-0 relative mr-0 mt-[30px] w-full max-w-container flex-1 lg:mr-[-50%] lg:mt-0">
+        <div className="slider-service relative mr-0 mt-[30px] w-full max-w-container flex-1 lg:mr-[-50%] lg:mt-0">
           <Swiper
             ref={swiperRef}
+            modules={[Autoplay]}
             slidesPerView={1}
             spaceBetween={21}
             loop={true}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
             navigation={true}
             centeredSlides={true}
             speed={1000}
@@ -30,6 +36,7 @@ const Service = () => {
               },
               1024: {
                 slidesPerView: 3,
+                autoplay: false,
               },
             }}
             className="slider-service"
@@ -39,7 +46,7 @@ const Service = () => {
                 <SwiperSlide>
                   <div
                     key={index}
-                    className="flex w-full flex-shrink-0 flex-col gap-y-8 rounded-[32px] bg-white px-8 pb-20 pt-16 md:h-[443px] md:gap-y-16 md:px-14 md:py-16 lg:max-w-[350px]"
+                    className="flex w-full flex-col gap-y-8 rounded-[32px] bg-white px-4 pb-20 pt-16 md:gap-y-16 md:px-14 md:py-16 lg:h-[443px] lg:max-w-[350px]"
                   >
                     <div className="flex items-center justify-center flex-shrink-0">
                       <img
