@@ -9,6 +9,7 @@ import addUser from "../../assets/images/icons/add-user.svg";
 import { HiLocationMarker } from "react-icons/hi";
 import { useState } from "react";
 import Modal from "../../components/Modal/Modal";
+import Ticket from "../../components/Ticket/Ticket";
 
 const Explore = () => {
   const [open, setOpen] = useState(false);
@@ -29,15 +30,16 @@ const Explore = () => {
         </Modal>
       )}
 
-      <div className="container mt-[100px] flex flex-col items-center overflow-hidden px-[15px] lg:mt-16 lg:flex-row lg:overflow-visible">
+      <div className="container mt-7 flex flex-col items-center overflow-hidden px-[15px] lg:mt-16 lg:flex-row lg:overflow-visible">
         {/* div left */}
         <div className="flex w-full flex-col gap-y-[43px] lg:w-1/2 lg:pr-[90px]">
-          <div className="flex items-center justify-center px-8 py-4 bg-white rounded-full gap-x-4 shadow-primary lg:self-start">
+          <Ticket>
             <span className="font-bold text-pink-light">
               Explore the world!
             </span>
             <img src={bagIcon} alt="" className="bound-animation" />
-          </div>
+          </Ticket>
+
           <h2 className="text-center text-4xl font-bold lg:text-start lg:text-[69px] lg:leading-[100px]">
             Travel <span className="text-pink-light">top destination</span> of
             the world
@@ -46,7 +48,7 @@ const Explore = () => {
             We always make our customer happy by providing as many choices as
             possible
           </p>
-          <div className="flex flex-col gap-4 lg:flex-row">
+          <div className="flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
             <Button variant="PRIMARY" className="shadow-primary">
               Get Started
             </Button>
@@ -64,7 +66,7 @@ const Explore = () => {
           </div>
         </div>
         {/* div right */}
-        <div className="bg-custom-explore mt-[50px] flex w-full flex-col items-center gap-[32px] pt-[83px] md:flex-row md:justify-center lg:mt-0 lg:w-1/2">
+        <div className="bg-custom-explore mt-[50px] flex w-full flex-row items-center justify-center gap-4 md:gap-8 md:pt-[83px] lg:mt-0 lg:w-1/2">
           <div className="">
             <div className="relative">
               <img
@@ -72,28 +74,32 @@ const Explore = () => {
                 alt="explore1"
                 className="jump-animation rounded-[32px]"
               />
-              <div className="jump-animation-1 absolute -bottom-[10%] -left-[13%] rounded-full bg-pink-light p-4 shadow-lg">
-                <img src={send} alt="send" className="" />
+              <div className="jump-animation-1 absolute -bottom-[5%] -left-[6%] rounded-full bg-pink-light p-2 shadow-lg sm:-bottom-[10%] sm:-left-[13%] sm:p-4">
+                <img
+                  src={send}
+                  alt="send"
+                  className="object-cover w-full h-full"
+                />
               </div>
             </div>
             <img
               src={explore2}
               alt="explore2"
-              className="jump-animation mt-[32px] rounded-[32px]"
+              className="jump-animation mt-4 rounded-[32px] md:mt-8"
             />
           </div>
           <div className="relative">
             <img
               src={explore3}
               alt="explore3"
-              className="lg:full jump-animation-2 h-[300px] w-[272px] rounded-[32px] object-cover lg:h-full lg:w-full"
+              className="lg:full jump-animation-2 h-1/2 w-[272px] rounded-[32px] object-cover lg:h-full lg:w-full"
             />
-            <div className="jump-animation absolute -left-[13%] bottom-full rounded-full bg-orange-custom p-4 shadow-lg lg:-bottom-[30%] lg:left-[30%]">
+            <div className="jump-animation absolute -bottom-[30%] left-[30%] rounded-full bg-orange-custom p-2 shadow-lg md:p-4">
               <img className="" src={addUser} alt="add-user" />
             </div>
-            <div className="jump-animation absolute -right-[10%] top-2/3 flex items-center gap-x-2 rounded-full bg-white px-8 py-4 shadow-primary lg:-right-[40%]">
+            <div className="jump-animation absolute -right-[5%] top-2/3 flex items-center gap-x-2 rounded-full bg-white px-4 py-2 shadow-primary sm:-right-[10%] sm:px-8 sm:py-4 lg:-right-[40%]">
               <HiLocationMarker color="#FACD49" size={30} />
-              <span className="text-sm font-bold">Top Places</span>
+              <span className="font-bold text-14">Top Places</span>
             </div>
           </div>
         </div>

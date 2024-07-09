@@ -21,7 +21,7 @@ const Header = () => {
         </div>{" "}
       </Link>
 
-      <ul className="hidden items-center gap-x-16 text-sm font-bold text-secondary lg:flex">
+      <ul className="items-center hidden text-sm font-bold gap-x-16 text-secondary lg:flex">
         {nav?.length > 0 &&
           nav.map((item, index) => (
             <li key={index} className="hover:text-black">
@@ -45,8 +45,12 @@ const Header = () => {
       </div>
 
       {/* mobile */}
+      <div
+        className={`fixed inset-0 z-40 bg-black bg-opacity-70 lg:hidden ${openMenu ? "block" : "hidden"}`}
+        onClick={() => setOpenMenu(false)}
+      ></div>
       <ul
-        className={`fixed inset-0 z-50 flex flex-col items-center gap-y-16 bg-white px-[15px] py-16 text-sm font-bold text-secondary transition-all lg:hidden ${openMenu ? "translate-x-0" : "translate-x-full"}`}
+        className={`fixed bottom-0 right-0 top-0 z-50 flex w-full max-w-[450px] flex-col items-center gap-y-16 bg-white px-[15px] py-16 text-sm font-bold text-secondary transition-all lg:hidden ${openMenu ? "translate-x-0" : "translate-x-full"}`}
       >
         {nav?.length > 0 &&
           nav.map((item, index) => (
@@ -61,7 +65,7 @@ const Header = () => {
           ))}
 
         <div
-          className="absolute right-0 top-0 cursor-pointer p-6 text-black"
+          className="absolute top-0 right-0 p-6 text-black cursor-pointer"
           onClick={() => setOpenMenu(false)}
         >
           <IoClose size={24} />
@@ -70,7 +74,7 @@ const Header = () => {
           <Button variant="OUTLINED" className="w-full text-sm">
             <Link to="/login">Log In</Link>
           </Button>
-          <Button variant="PRIMARY" className="mt-4 w-full text-sm">
+          <Button variant="PRIMARY" className="w-full mt-4 text-sm">
             <Link to="/register">Sign Up</Link>
           </Button>
         </div>

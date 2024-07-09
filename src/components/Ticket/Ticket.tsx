@@ -5,7 +5,7 @@ interface IProps {
 const Ticket = ({ children, className }: IProps) => {
   return (
     <div
-      className={`flex items-center justify-center gap-x-[20px] rounded-full bg-white px-8 py-4 text-[23px] font-bold shadow-primary ${className}`}
+      className={`flex items-center justify-center gap-x-4 rounded-full bg-white px-8 py-4 font-bold shadow-primary sm:mx-auto sm:self-start lg:mx-0 ${className}`}
     >
       {children}
     </div>

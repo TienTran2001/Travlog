@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="absolute right-0 top-1/2 translate-x-1/2 md:top-0 lg:-right-[35%] lg:-top-[30%] lg:translate-x-0">
         <img src={wareBg} alt="ware background" />
       </div>
-      <div className="flex flex-col justify-between gap-x-[153px] pb-[86px] pt-[128px] lg:flex-row">
+      <div className="flex flex-col justify-between gap-x-[153px] pb-[86px] pt-16 sm:pt-[128px] lg:flex-row">
         <div className="lg:w-[26%]">
           <Link to={navRoutes.HOME}>
             <div className="flex items-center gap-x-6">
@@ -20,11 +20,11 @@ const Footer = () => {
               <span className="text-[24px] font-bold">Travlog</span>
             </div>{" "}
           </Link>
-          <p className="mt-8 text-[23px] font-normal text-secondary">
+          <p className="mt-8 font-normal text-18 sm:text-23 text-secondary">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>
-          <div className="mt-16 flex gap-x-8">
+          <div className="flex mt-16 gap-x-8">
             <Button className="!p-4 text-white">
               <FaTwitter size={23} />
             </Button>
@@ -39,7 +39,7 @@ const Footer = () => {
         <div className="mt-[50px] flex flex-1 flex-col justify-between gap-y-12 md:flex-row lg:mt-0">
           <div className="">
             <h2 className="footer-heading">Company</h2>
-            <ul className="mt-8 flex flex-col gap-y-8">
+            <ul className="flex flex-col mt-8 gap-y-8">
               <li className="footer-item-link">
                 <Link to="/about">About</Link>
               </li>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
           <div className="">
             <h2 className="footer-heading">Contact</h2>
-            <ul className="mt-8 flex flex-col gap-y-8">
+            <ul className="flex flex-col mt-8 gap-y-8">
               <li className="footer-item-link">
                 <Link to="/why_travlog">Why Travlog?</Link>
               </li>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
           <div className="">
             <h2 className="footer-heading">Meet Us</h2>
-            <ul className="mt-8 flex flex-col gap-y-8">
+            <ul className="flex flex-col mt-8 gap-y-8">
               <li className="footer-item-link">
                 <Link to="">+00 92 1234 56789</Link>
               </li>

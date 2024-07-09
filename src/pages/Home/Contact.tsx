@@ -19,7 +19,9 @@ const Contact = () => {
         <div className="absolute top-0 left-0 -translate-x-4 -translate-y-4 lg:-translate-x-1/4 lg:-translate-y-1/4">
           <img src={caroLayer} alt="caro layer" className="" />
         </div>
-        <h3 className="title-heading">subscribe to our newsletter</h3>
+        <h3 className="title-heading !text-16 uppercase">
+          subscribe to our newsletter
+        </h3>
         <h2 className="title-heading-2 lg:px-8">
           Prepare yourself & let’s explore the beauty of the world
         </h2>
