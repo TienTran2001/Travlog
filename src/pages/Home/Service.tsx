@@ -15,7 +15,7 @@ const Service = () => {
           <h2 className="title-heading-2">Our top value categories for you</h2>
         </div>
 
-        <div className="slider-service ld:mr-0 relative mr-0 mt-[30px] w-full max-w-[1120px] flex-1 lg:mr-[-50%] lg:mt-0">
+        <div className="slider-service ld:mr-0 relative mr-0 mt-[30px] w-full max-w-container flex-1 lg:mr-[-50%] lg:mt-0">
           <Swiper
             ref={swiperRef}
             slidesPerView={1}
