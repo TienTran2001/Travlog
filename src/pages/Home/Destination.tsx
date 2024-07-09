@@ -1,7 +1,7 @@
 import { destinations } from "../../utils/containts";
 import { FaStar } from "react-icons/fa";
 import obj from "../../assets/images/destination/OBJECTS.svg";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import "swiper/css";

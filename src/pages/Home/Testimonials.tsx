@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import Button from "../../components/Buttons/Button";
 import { LuMoveLeft, LuMoveRight } from "react-icons/lu";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { sliderTestimonials } from "../../utils/containts";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import "swiper/css";

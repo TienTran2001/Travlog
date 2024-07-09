@@ -4,7 +4,7 @@ import booking from "../../assets/images/logo/booking.svg";
 import airbnb from "../../assets/images/logo/airbnb.svg";
 import orbiz from "../../assets/images/logo/orbitz.svg";
 import obj from "../../assets/images/logo/OBJECTS.svg";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
