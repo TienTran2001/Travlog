@@ -107,7 +107,7 @@
 }
 
 .slider-testimonials #containerForBullets {
-  @apply flex justify-center gap-x-2 sm:gap-x-6;
+  @apply flex justify-center gap-x-4 sm:gap-x-6;
 }
 
 .swiper-custom-bullet {
