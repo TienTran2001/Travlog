@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="absolute right-0 top-1/2 translate-x-1/2 md:top-0 lg:-right-[35%] lg:-top-[30%] lg:translate-x-0">
         <img src={wareBg} alt="ware background" />
       </div>
-      <div className="flex flex-col justify-between gap-x-[153px] pb-[86px] pt-16 sm:pt-[128px] lg:flex-row">
+      <div className="sm:pt-128 flex flex-col justify-between gap-x-[153px] pb-[86px] pt-16 lg:flex-row">
         <div className="lg:w-[26%]">
           <Link to={navRoutes.HOME}>
             <div className="flex items-center gap-x-6">
@@ -20,7 +20,7 @@ const Footer = () => {
               <span className="text-[24px] font-bold">Travlog</span>
             </div>{" "}
           </Link>
-          <p className="mt-8 font-normal text-18 sm:text-23 text-secondary">
+          <p className="mt-8 font-normal text-18 text-secondary sm:text-23">
             Contrary to popular belief, Lorem Ipsum is not simply random text.
             It has roots in a piece of classical Latin literature from 45 BC.
           </p>

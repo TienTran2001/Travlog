@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap");
+@import url("./assets/fonts/CircularStd/stylesheet.css");
+/* @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"); */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* custom */
 .title-heading {
-  @apply font-bold tracking-widest text-18 text-pink-light md:text-23;
+  @apply font-bold uppercase tracking-6 text-18 text-pink-light md:text-23;
 }
 
 .title-heading-2 {
@@ -84,7 +85,7 @@
 }
 
 .slider-service .swiper-slide {
-  @apply px-4 py-8 sm:px-0;
+  @apply w-full px-4 py-8 lg:max-w-350 sm:px-0;
 }
 
 .slider-service .swiper-slide.swiper-slide-active > div {

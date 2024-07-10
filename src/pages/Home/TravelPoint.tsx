@@ -36,7 +36,7 @@ const TravelPoint = () => {
       onExit={() => setCounter(false)}
     >
       <div className="">
-        <div className="container mt-[64px]">
+        <div className="container mt-16 md:mt-128">
           <div className="flex flex-col lg:flex-row">
             <div className="flex flex-col bg-travel-point lg:w-1/2">
               <Ticket className="lg:absolute lg:right-0 lg:top-1/4">
@@ -61,12 +61,12 @@ const TravelPoint = () => {
                 text. It has roots in a piece of classical Latin literature from
                 45 BC.
               </p>
-              <div className="grid grid-cols-12 gap-4 mt-16 md:gap-8 lg:px-0">
+              <div className="grid grid-cols-12 gap-4 mt-8 md:mt-16 md:gap-8 lg:px-0">
                 {travelPoints.length > 0 &&
                   travelPoints.map((item, index) => (
                     <div
                       key={index}
-                      className="col-span-6 p-4 text-center border rounded-32 border-gray-light sm:col-span-3 lg:p-8 lg:col-span-6"
+                      className="col-span-6 p-4 text-center border rounded-32 border-gray-light sm:col-span-3 lg:col-span-6 lg:p-8"
                     >
                       <span className="text-3xl font-bold text-orange-custom lg:text-[35px]">
                         {counter && <CountUp end={item.numbers} />}

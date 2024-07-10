@@ -40,7 +40,7 @@ const Testimonials = () => {
 
   const swiperRef = useRef<SwiperRef>(null);
   return (
-    <div className="bg-testimonials relative z-10 mx-auto w-full max-w-[1536px] overflow-hidden bg-opacity-50 pt-16 lg:pt-[128px]">
+    <div className="bg-testimonials lg:pt-128 relative z-10 mx-auto w-full max-w-[1536px] overflow-hidden bg-opacity-50 pt-16">
       <div className="container flex flex-col text-center gap-y-8 md:gap-y-16">
         <div>
           <h3 className="title-heading">Testimonials</h3>
@@ -82,7 +82,7 @@ const Testimonials = () => {
                         key={index}
                         className="flex flex-col w-full mx-auto gap-y-8 md:gap-y-16"
                       >
-                        <div className="mx-auto flex h-[128px] w-[128px]">
+                        <div className="flex mx-auto h-128 w-128">
                           <img
                             src={item.img}
                             alt="avatar"

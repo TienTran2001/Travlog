@@ -72,7 +72,7 @@ const Explore = () => {
               <img
                 src={explore1}
                 alt="explore1"
-                className="jump-animation rounded-[32px]"
+                className="jump-animation rounded-32"
               />
               <div className="jump-animation-1 absolute -bottom-[5%] -left-[6%] rounded-full bg-pink-light p-2 shadow-lg sm:-bottom-[10%] sm:-left-[13%] sm:p-4">
                 <img
@@ -85,14 +85,14 @@ const Explore = () => {
             <img
               src={explore2}
               alt="explore2"
-              className="jump-animation mt-4 rounded-[32px] md:mt-8"
+              className="mt-4 jump-animation rounded-32 md:mt-8"
             />
           </div>
           <div className="relative">
             <img
               src={explore3}
               alt="explore3"
-              className="lg:full jump-animation-2 h-1/2 w-[272px] rounded-[32px] object-cover lg:h-full lg:w-full"
+              className="lg:full jump-animation-2 h-1/2 w-[272px] rounded-32 object-cover lg:h-full lg:w-full"
             />
             <div className="jump-animation absolute -bottom-[30%] left-[30%] rounded-full bg-orange-custom p-2 shadow-lg md:p-4">
               <img className="" src={addUser} alt="add-user" />

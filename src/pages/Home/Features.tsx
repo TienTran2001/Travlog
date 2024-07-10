@@ -46,7 +46,7 @@ const servicesDes = [
 ];
 const Features = () => {
   return (
-    <div className="container mt-[64px]">
+    <div className="container mt-16 md:mt-128">
       <div className="flex flex-col-reverse gap-y-10 lg:flex-row lg:gap-x-[42px]">
         {/* div left */}
         <div className="lg:w-1/2">
@@ -65,18 +65,16 @@ const Features = () => {
               servicesDes.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center gap-x-4 rounded-[32px] border border-white p-4 transition-all hover:border hover:border-gray-light md:gap-x-8 md:p-8"
+                  className="flex items-center p-4 transition-all border border-white gap-x-4 rounded-32 hover:border hover:border-gray-light md:gap-x-8 md:p-8"
                 >
                   <div
-                    className={`rounded-[24px] md:rounded-[32px] ${item.bgColor} flex-shrink-0 p-5 md:p-[26px]`}
+                    className={`rounded-[24px] md:rounded-32 ${item.bgColor} flex-shrink-0 p-5 md:p-[26px]`}
                   >
                     {item.icon}
                   </div>
                   <div className="">
-                    <p className="text-16 font-bold sm:text-[23px]">
-                      {item.title}
-                    </p>
-                    <p className="mt-2 text-14 sm:text-18 text-secondary">
+                    <p className="font-bold text-16 sm:text-23">{item.title}</p>
+                    <p className="mt-2 text-14 text-secondary sm:text-18">
                       {item.desc}
                     </p>
                   </div>

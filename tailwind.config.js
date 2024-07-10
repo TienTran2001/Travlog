@@ -4,18 +4,29 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        ibm: ['"IBM Plex Sans"', "sans-serif"],
+        // ibm: ['"IBM Plex Sans"', "sans-serif"],
+        cstd: ['"Circular Std"', "sans-serif"],
       },
       width: {
         container: "1140px",
+        128: "128px",
+        350: "350px",
+      },
+      height: {
+        128: "128px",
+        350: "350px",
       },
       maxWidth: {
         container: "1140px",
+        350: "350px",
+      },
+      letterSpacing: {
+        6: "0.375rem",
+      },
+      borderRadius: {
+        32: "2rem",
       },
       backgroundColor: {},
-      borderRadius: {
-        32: "32px",
-      },
       colors: {
         main: "#5D50C6",
         secondary: "rgba(25, 24, 37, 0.5)",
@@ -39,6 +50,12 @@ export default {
       backgroundImage: {
         travel: "url('/bg.png')",
         // testimonials: "url('/bg-testimonials.svg')",
+      },
+      margin: {
+        128: "128px",
+      },
+      padding: {
+        128: "128px",
       },
     },
   },

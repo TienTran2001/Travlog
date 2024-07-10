@@ -46,7 +46,7 @@ const Service = () => {
                 <SwiperSlide>
                   <div
                     key={index}
-                    className="flex w-full flex-col gap-y-8 rounded-[32px] bg-white px-4 pb-20 pt-16 md:gap-y-16 md:px-14 md:py-16 lg:h-[443px] lg:max-w-[350px]"
+                    className="lg:max-w-350 flex w-full flex-col gap-y-8 rounded-32 bg-white px-4 pb-20 pt-16 md:gap-y-16 md:px-14 md:py-16 lg:h-[443px]"
                   >
                     <div className="flex items-center justify-center flex-shrink-0">
                       <img

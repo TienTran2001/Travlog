@@ -12,7 +12,7 @@ import { navRoutes } from "./utils/containts";
 function App() {
   return (
     <>
-      <div className="font-ibm">
+      <div className="font-cstd">
         <ToastContainer
           position="top-right"
           autoClose={3000}

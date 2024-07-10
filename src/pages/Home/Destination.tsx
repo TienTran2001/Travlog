@@ -12,7 +12,7 @@ const Destination = () => {
   const swiperRef = useRef<SwiperRef>(null);
   return (
     <div className="container">
-      <div className="flex flex-col items-center justify-between p-8 sm:py-16 md:flex-row">
+      <div className="flex flex-col items-center justify-between py-8 sm:py-16 md:flex-row">
         <div className="text-center md:text-start">
           <h3 className="title-heading">Top Destination</h3>
           <h2 className="title-heading-2">Explore top destination</h2>
@@ -56,7 +56,7 @@ const Destination = () => {
                   >
                     <Link to={item.link}>
                       <div className="flex flex-col h-full">
-                        <div className="h-[250px] w-full flex-shrink-0 md:h-[350px]">
+                        <div className="md:h-350 h-[250px] w-full flex-shrink-0">
                           <img
                             src={item.image}
                             alt={item.location}
@@ -64,7 +64,7 @@ const Destination = () => {
                           />
                         </div>
                         {/* content */}
-                        <div className="flex flex-col justify-between flex-1 p-6 font-bold text-18 md:text-23 gap-y-4 sm:p-8">
+                        <div className="flex flex-col justify-between flex-1 p-6 font-bold gap-y-4 text-18 sm:p-8 md:text-23">
                           <div className="flex justify-between gap-x-4">
                             <h3 className="text-truncate-2-lines">
                               {item.title}
@@ -73,7 +73,7 @@ const Destination = () => {
                               ${item.price}
                             </span>
                           </div>
-                          <p className="font-medium text-16 md:text-18 text-secondary">
+                          <p className="font-medium text-16 text-secondary md:text-18">
                             {item.location}
                           </p>
                           <span className="flex items-center mt-auto gap-x-2 text-orange-custom">
