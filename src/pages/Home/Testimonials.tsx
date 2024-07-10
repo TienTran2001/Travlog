@@ -40,7 +40,7 @@ const Testimonials = () => {
 
   const swiperRef = useRef<SwiperRef>(null);
   return (
-    <div className="relative z-10 mx-auto w-full max-w-[1920px] overflow-hidden bg-opacity-50 bg-testimonials pt-16 lg:pt-[128px]">
+    <div className="bg-testimonials relative z-10 mx-auto w-full max-w-[1536px] overflow-hidden bg-opacity-50 pt-16 lg:pt-[128px]">
       <div className="container flex flex-col text-center gap-y-8 md:gap-y-16">
         <div>
           <h3 className="title-heading">Testimonials</h3>

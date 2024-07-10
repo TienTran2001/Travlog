@@ -5,11 +5,11 @@
 
 /* custom */
 .title-heading {
-  @apply font-bold tracking-widest text-18 md:text-23 text-pink-light;
+  @apply font-bold tracking-widest text-18 text-pink-light md:text-23;
 }
 
 .title-heading-2 {
-  @apply text-23 mt-4 font-bold md:text-4xl lg:leading-[60px];
+  @apply mt-4 text-23 font-bold md:text-4xl lg:leading-[60px];
 }
 
 .text-desc {
@@ -17,7 +17,7 @@
 }
 
 .container {
-  @apply mx-auto w-full max-w-container p-[15px];
+  @apply mx-auto w-full max-w-container px-[15px];
 }
 
 .footer-heading {
@@ -84,7 +84,7 @@
 }
 
 .slider-service .swiper-slide {
-  @apply w-full max-w-[350px] px-4 py-8 sm:px-0;
+  @apply px-4 py-8 sm:px-0;
 }
 
 .slider-service .swiper-slide.swiper-slide-active > div {
@@ -169,8 +169,8 @@
     left: 0px;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1536px) {
   .bg-testimonials {
-    background: url("/bg-testimonials.svg") no-repeat 59% 39% / 286%;
+    background: url("/bg-testimonials.svg") no-repeat 55% 34% / 226%;
   }
 }

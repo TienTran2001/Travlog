@@ -9,9 +9,9 @@ const Service = () => {
   const swiperRef = useRef<SwiperRef>(null);
 
   return (
-    <div className="container sm:mt-16">
+    <div className="container sm:mt-8">
       <div className="flex flex-col items-center lg:flex-row">
-        <div className="pr-[5%] text-center lg:w-[40%] lg:text-start">
+        <div className="text-center lg:w-[40%] lg:pr-[5%] lg:text-start">
           <h3 className="title-heading">Services</h3>
           <h2 className="title-heading-2">Our top value categories for you</h2>
         </div>
